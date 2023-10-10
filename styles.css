@@ -1,0 +1,29 @@
+/* Universal selector */
+* {
+    color: red;
+    font-size: 24px;
+}
+
+/* Tag selector*/
+p {
+    color: blue;
+}
+
+/* Class selector */
+.highlight {
+    color: green;
+}
+
+/* ID selector */
+#header {
+    background-color: yellow;
+}
+
+/*Descendant Selector */
+article p {
+    color: deeppink;
+}
+
+article h2 {
+    color: darkgoldenrod;
+}

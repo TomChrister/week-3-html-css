@@ -4,6 +4,11 @@
     font-size: 24px;
 }
 
+a:hover {
+    background-color: yellow;
+    font-size: 28px;
+}
+
 /* Tag selector*/
 p {
     color: blue;
@@ -26,4 +31,69 @@ article p {
 
 article h2 {
     color: darkgoldenrod;
+}
+
+/* Child Selector (parent > child) Matches an element that is a
+direct child of a specific element*/
+ul > li {
+    list-style-type: square;
+}
+
+/*General sibling selector*/
+h2 ~ p {
+    background-color: brown;
+}
+
+/*Sibling selector*/
+h2 + p {
+    background-color: aqua;
+}
+
+input[type="text"] {
+    color: black;
+    font-size: 20px;
+    border-color: palegreen;
+    border-radius: 8px;
+}
+
+input[type="submit"] {
+    color: black;
+    font-size: 20px;
+    border-radius: 8px;
+    border-color: palegreen;
+    text-transform: uppercase;
+}
+
+/*Pseudo-class*/
+ul li:first-child {
+    background-color: blueviolet;
+}
+
+ul li:last-child {
+    background-color: green;
+}
+
+ul li:nth-child(2) {
+    background-color: yellow;
+}
+
+/*Pseudo-elements :: before and ::after*/
+
+p::before {
+    content: "✅";
+}
+
+p::after {
+    content: "👌🏽";
+}
+
+/*Grouping selector*/
+
+h1, h2, p {
+    font-family: "Comic Sans MS", Serif;
+}
+
+p.dummy::first-letter {
+    font-size: 76px;
+    initial-letter: 3 10;
 }

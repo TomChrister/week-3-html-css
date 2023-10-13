@@ -1,99 +1,86 @@
-/* Universal selector */
 * {
-    color: red;
-    font-size: 24px;
+    box-sizing: border-box;
+    font-family: monospace, Serif;
 }
 
-a:hover {
-    background-color: yellow;
-    font-size: 28px;
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 0;
 }
 
-/* Tag selector*/
-p {
-    color: blue;
-}
-
-/* Class selector */
-.highlight {
-    color: green;
-}
-
-/* ID selector */
-#header {
-    background-color: yellow;
-}
-
-/*Descendant Selector */
-article p {
-    color: deeppink;
-}
-
-article h2 {
-    color: darkgoldenrod;
-}
-
-/* Child Selector (parent > child) Matches an element that is a
-direct child of a specific element*/
-ul > li {
-    list-style-type: square;
-}
-
-/*General sibling selector*/
-h2 ~ p {
-    background-color: brown;
-}
-
-/*Sibling selector*/
-h2 + p {
-    background-color: aqua;
-}
-
-input[type="text"] {
-    color: black;
-    font-size: 20px;
-    border-color: palegreen;
+.modal {
+    height: 80vh;
+    background-color: white;
+    width: 900px;
+    max-width: 80%;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
 
-input[type="submit"] {
-    color: black;
-    font-size: 20px;
-    border-radius: 8px;
-    border-color: palegreen;
-    text-transform: uppercase;
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem .5rem 1rem;
+    border-bottom: 1px solid #777;
 }
 
-/*Pseudo-class*/
-ul li:first-child {
-    background-color: blueviolet;
+.modal-header .title {
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
-ul li:last-child {
+.modal-header .close-button {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    align-self: flex-start;
+    padding-top: .5rem;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 1rem;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px #777;
+    padding: .5rem;
+    gap: .5rem;
+}
+
+
+.btn {
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.btn-primary {
     background-color: green;
 }
 
-ul li:nth-child(2) {
-    background-color: yellow;
+.btn-primary:hover, .btn-primary:focus {
+    background-color: darkgreen;
 }
 
-/*Pseudo-elements :: before and ::after*/
-
-p::before {
-    content: "✅";
+.btn-danger {
+    background-color: red;
 }
 
-p::after {
-    content: "👌🏽";
-}
-
-/*Grouping selector*/
-
-h1, h2, p {
-    font-family: "Comic Sans MS", Serif;
-}
-
-p.dummy::first-letter {
-    font-size: 76px;
-    initial-letter: 3 10;
+.btn-danger:hover, .btn-danger:focus {
+    background-color: #A11;
 }

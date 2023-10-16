@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    margin: 0;
 }
 
 header {
@@ -9,12 +14,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+.header-logo {
+    width: 134px;
+    height: 74px;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
+    margin-left: 70px;
 }
 
 ul {
+    color: white;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
 }
 
 li {
@@ -25,15 +46,18 @@ li {
 }
 
 i .fa-magnifying-glass {
-    border: none;
-    align-self: flex-start;
-    background: none;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px;
     cursor: pointer;
     font-size: 20px;
 }
 
 i .fa-user {
-    align-self: flex-start;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
     font-size: 20px;
 }

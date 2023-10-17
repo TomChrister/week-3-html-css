@@ -45,16 +45,15 @@ li {
     margin: 48px;
 }
 
-i .fa-magnifying-glass {
+#fa-solid-fa-magnifying-glass{
     display: inline;
     justify-content: space-between;
     align-items: center;
-    margin: 24px;
     cursor: pointer;
     font-size: 20px;
 }
 
-i .fa-user {
+#fa-solid-fa-user {
     display: inline;
     justify-content: space-between;
     align-items: center;

@@ -18,7 +18,11 @@ header {
 }
 
 nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -45,18 +49,12 @@ li {
     margin: 48px;
 }
 
-#fa-solid-fa-magnifying-glass{
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-size: 20px;
+.fa-magnifying-glass {
+    position: absolute;
+    right: 70px;
 }
 
-#fa-solid-fa-user {
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-size: 20px;
+.fa-user {
+    position: absolute;
+    right: 110px;
 }

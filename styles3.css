@@ -32,14 +32,14 @@ nav {
     display: inline;
     justify-content: space-between;
     align-items: center;
-    margin: 24px;
     margin-left: 70px;
 }
 
-ul {
+.nav-list {
     color: white;
     list-style-type: none;
     display: flex;
+    padding: 0;
 }
 
 li {
@@ -47,8 +47,10 @@ li {
     justify-content: space-between;
     align-items: center;
     margin: 48px;
+    position: relative; z-index: 2;
 }
 
+/*
 .fa-magnifying-glass {
     position: absolute;
     right: 70px;
@@ -57,4 +59,4 @@ li {
 .fa-user {
     position: absolute;
     right: 110px;
-}
+}*/

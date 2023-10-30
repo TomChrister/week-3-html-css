@@ -1,0 +1,26 @@
+* {
+    /*
+    box-sizing: border-box;
+    */
+}
+
+body {
+    margin: 0;
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 1;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+}
